@@ -36,7 +36,10 @@ h1 {
     transition: 1s ease-in-out;
 }
 
-.upper_body { 
+.upper_body {
+	transition: flex;
+	transition-timing-function: linear;
+	transition-duration: 10s;
 	display: flex;
 	justify-content: center;
 	align-self: center;
@@ -44,17 +47,18 @@ h1 {
 	height: 150px;
 } 
 
+.upper_body:hover{
+    flex-direction: row-reverse;
+}
+
 .android{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	-webkit-transition: width 20s /* For Safari 3.1 to 6.0 */
-	transition:width 20s;
 }
 
 .android:hover{
-	transition-timing-function: ease-in-out;
-	width: 150%;
+	
 }
 
 .left_arm, .right_arm { 
